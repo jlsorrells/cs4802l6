@@ -58,8 +58,9 @@ function draw( graph ) {
   var color = d3.scale.category20();
 
   var force = d3.layout.force()
-    .charge(-50)
-    .linkDistance(10)
+    .charge(-60)
+    .linkDistance(20)
+    .gravity(0.2)
     .size([width, height]);
 
   var svg = d3.select("body").append("svg")
